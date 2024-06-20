@@ -1,0 +1,6 @@
+*.env
+/testdata
+/data
+/__pycache__
+qdrant-run.txt
+groqtest.py
