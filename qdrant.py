@@ -29,7 +29,6 @@ class VectorStoreManager:
          limit=k,
          with_payload=True,
       )
-      # print(search_results)
       ids = []
       
       res_docs = []
@@ -42,7 +41,6 @@ class VectorStoreManager:
          d = Document(page_content=res.payload['data_pt'])
          # d.metadata
          d.metadata = res.payload['meta_data']
-         print(d.metadata)
          res_docs.append(d)
       
       return res_docs
